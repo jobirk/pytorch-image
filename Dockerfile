@@ -1,7 +1,7 @@
-# Docker image for ML with pytorch based on the official anaconda image
+# Docker image for ML with pytorch based on the official pytorch image
 
-FROM continuumio/anaconda3
+FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
 
-COPY environment.yml .
+COPY requirements.txt .
 
-RUN conda env create -f environment.yml
+RUN pip install requirements.txt

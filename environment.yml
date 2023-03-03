@@ -1,8 +1,0 @@
-name: pytorch-env
-channels:
-  - defaults
-dependencies:
-  - numpy
-  - matplotlib
-  - python==3.8.5
-  - pytorch
