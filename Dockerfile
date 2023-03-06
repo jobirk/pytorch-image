@@ -11,5 +11,3 @@ RUN pip install -r requirements.txt
 # move anaconda binary path to the end, otherwise the "clear" command in the terminal
 # is broken
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/anaconda/bin
-ENV TEST=dummy
-RUN touch dummy.txt
