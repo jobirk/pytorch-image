@@ -1,3 +1,5 @@
 matplotlib==3.7.0
 scikit-learn==1.2.1
 comet_ml==3.32.3
+pandas==1.5.3
+h5py==3.8.0
