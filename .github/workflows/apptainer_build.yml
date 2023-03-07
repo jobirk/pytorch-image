@@ -24,8 +24,7 @@ jobs:
       - uses: eWaterCycle/setup-apptainer@v2
         with:
           apptainer-version: 1.1.2
-      
       - name: Run an apptainer container
-				run: apptainer run docker://alpine cat /etc/os-release          
+        run: apptainer run docker://alpine cat /etc/os-release          
       - name: Build sif file
         run: apptainer build ${CONTAINER_REGISTRY}/${IMAGE_NAME}.sif docker://${CONTAINER_REGISTRY}/${IMAGE_NAME}:latest
