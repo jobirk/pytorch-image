@@ -37,3 +37,9 @@ jobs:
       - name: Push image
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: docker push ${CONTAINER_REGISTRY}/${IMAGE_NAME}:latest
+
+      - name: Install apptainer
+        run: apt update && apt install -y software-properties-common && add-apt-repository -y ppa:apptainer/ppa && apt update && apt install -y apptainer
+
+      - name: Build sif file
+        run: apptainer build ${CONTAINER_REGISTRY}/${IMAGE_NAME}.sif docker://${CONTAINER_REGISTRY}/${IMAGE_NAME}:latest
