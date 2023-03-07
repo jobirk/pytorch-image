@@ -29,5 +29,8 @@ jobs:
       - name: Build sif file
         run: apptainer build ${IMAGE_NAME}.sif docker://jobirk/ubuntuplus:latest
 
+      - name: Login to registry
+        run: apptainer remote login SylabsCloud -p ${{ secrets.SYSLABS_CONTAINER_REGISTRY }} 
+
       - name: Push sif file
         run: apptainer push -U ${IMAGE_NAME}.sif library://joschkabirk/pytorch/pytorch-image:latest
