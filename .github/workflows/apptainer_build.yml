@@ -1,0 +1,29 @@
+name: Apptainer build
+
+on:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - 'main'
+    tags:
+      - '*'
+        
+env:
+  CONTAINER_REGISTRY: joschkabirk
+  IMAGE_NAME: pytorch-image
+
+jobs:
+  build_latest:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@master
+          
+      - name: Install apptainer
+        run: sudo apt update && sudo apt install -y software-properties-common && add-apt-repository -y ppa:apptainer/ppa && sudo apt update && sudo apt install -y apptainer
+
+      - name: Build sif file
+        run: apptainer build ${CONTAINER_REGISTRY}/${IMAGE_NAME}.sif docker://${CONTAINER_REGISTRY}/${IMAGE_NAME}:latest
