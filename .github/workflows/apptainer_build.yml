@@ -30,7 +30,7 @@ jobs:
         run: apptainer build ${IMAGE_NAME}.sif docker://jobirk/ubuntuplus:latest
 
       - name: Login to registry
-        run: apptainer remote login SylabsCloud -p ${{ secrets.SYSLABS_CONTAINER_REGISTRY }} 
+        run: echo ${{ secrets.SYSLABS_CONTAINER_REGISTRY }} | apptainer remote login SylabsCloud
 
       - name: Push sif file
         run: apptainer push -U ${IMAGE_NAME}.sif library://joschkabirk/pytorch/pytorch-image:latest
