@@ -1,6 +1,7 @@
-matplotlib==3.7.0
-scikit-learn==1.2.1
+black
 comet_ml==3.32.3
-pandas==1.5.3
 h5py==3.8.0
+matplotlib==3.7.0
+pandas==1.5.3
+scikit-learn==1.2.1
 tables==3.8.0
