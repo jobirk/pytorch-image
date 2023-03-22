@@ -7,3 +7,4 @@ pandas==1.5.3
 pylint
 scikit-learn==1.2.1
 tables==3.8.0
+wandb
