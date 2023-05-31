@@ -1,11 +1,14 @@
 black
 comet_ml==3.32.3
+dcor
 h5py==3.8.0
 isort
 law
 matplotlib==3.7.0
 pandas==1.5.3
 pylint
+ruff
 scikit-learn==1.2.1
 tables==3.8.0
+uproot
 wandb
