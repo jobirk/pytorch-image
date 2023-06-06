@@ -5,6 +5,7 @@ h5py==3.8.0
 isort
 law
 matplotlib==3.7.0
+markupsafe==2.0.1
 pandas==1.5.3
 pylint
 ruff
