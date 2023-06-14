@@ -1,13 +1,15 @@
 black
 comet_ml==3.32.3
 dcor
+fsspec
 h5py==3.8.0
 isort
 law
-matplotlib==3.7.0
 markupsafe==2.0.1
+matplotlib==3.7.0
 pandas==1.5.3
 pre-commit
+pyarrow
 pylint
 ruff
 scikit-learn==1.2.1
