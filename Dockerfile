@@ -4,6 +4,10 @@ FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
 
 RUN apt-get update && apt-get install -y vim wget curl git
 
+# allow pip install of "sklearn", which should be replaced by "scikit-learn"
+# (if this is not used, the github CI pipeline fails from time to time)
+ENV SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
+
 COPY requirements.txt .
 COPY requirements_cnf.txt .
 
