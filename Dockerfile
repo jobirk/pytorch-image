@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y vim wget curl git
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
+RUN pip install -r requirements_cnf.txt
 
 SHELL ["/bin/bash", "--login", "-c"]
 
