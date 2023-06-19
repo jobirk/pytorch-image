@@ -4,7 +4,7 @@ FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
 
 RUN apt-get update && apt-get install -y vim wget curl git
 
-COPY requirements* .
+COPY requirements.txt requirements_cnf.txt .
 
 RUN pip install -r requirements.txt
 RUN pip install -r requirements_cnf.txt
