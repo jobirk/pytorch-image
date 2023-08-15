@@ -12,7 +12,6 @@ COPY requirements.txt .
 COPY requirements_cnf.txt .
 
 RUN pip install -r requirements.txt
-RUN pip install -r requirements_cnf.txt
 
 SHELL ["/bin/bash", "--login", "-c"]
 
