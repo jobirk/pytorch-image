@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y vim wget curl git
 ENV SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL=True
 
 COPY requirements.txt .
-COPY requirements_cnf.txt .
 
 RUN pip install -r requirements.txt
 
