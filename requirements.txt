@@ -12,6 +12,7 @@ zuko
 
 # -------- hep stuff -------
 energyflow
+fastjet
 jetnet
 law
 POT
