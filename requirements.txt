@@ -11,13 +11,14 @@ tables==3.8.0
 zuko
 
 # -------- hep stuff -------
+awkward>=2.3
 energyflow
 fastjet
 jetnet
 law
 POT
 pyjet
-uproot
+uproot>=5
 weaver-core>=0.4
 
 # --------- pytorch --------- #
