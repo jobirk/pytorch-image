@@ -22,11 +22,10 @@ uproot>=5
 weaver-core>=0.4
 
 # --------- pytorch --------- #
-pytorch-lightning>=2.0.0
-torch>=1.10.0
-torchdyn==1.0.3
-torchmetrics>=0.11.4
-torchvision>=0.11.0
+pytorch-lightning
+torchdyn
+torchmetrics
+torchvision
 
 # --------- hydra --------- #
 hydra-colorlog==1.2.0
