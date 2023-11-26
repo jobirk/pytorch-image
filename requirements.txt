@@ -1,29 +1,24 @@
 dcor
-fsspec
-h5py==3.8.0
-lightning
-markupsafe==2.0.1
-matplotlib==3.7.0
-pandas==1.5.3
+h5py
+matplotlib
+pandas
 pyarrow
-scikit-learn==1.2.1
+scikit-learn
 seaborn
-tables==3.8.0
+tables
 zuko
 
 # -------- hep stuff -------
-awkward>=2.3
+awkward>=2.5
 energyflow
 fastjet
 jetnet
 law
-POT
-pyjet
 uproot>=5
 weaver-core>=0.4
 
 # --------- pytorch --------- #
-pytorch-lightning
+lightning
 torchdyn
 torchmetrics
 torchvision
@@ -34,13 +29,10 @@ hydra-core==1.3.2
 hydra-optuna-sweeper==1.2.0
 
 # --------- loggers --------- #
-# mlflow
-# neptune-client
 comet-ml
 wandb
 
 # --------- dev tools & others --------- #
-# sh            # for running bash commands in some tests (linux/macos only)
 black
 isort
 pre-commit      # hooks for applying linters on commit
