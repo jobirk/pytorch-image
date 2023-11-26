@@ -19,6 +19,7 @@ weaver-core>=0.4
 
 # --------- pytorch --------- #
 lightning
+pytorch-lightning
 torchdyn
 torchmetrics
 torchvision
