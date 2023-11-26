@@ -1,4 +1,5 @@
 dcor
+fsspec
 h5py
 matplotlib
 pandas
