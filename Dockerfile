@@ -2,7 +2,7 @@
 
 FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-runtime
 
-RUN apt-get update && apt-get install -y vim wget curl git
+RUN apt-get update && apt-get install -y vim wget curl git zsh
 
 # allow pip install of "sklearn", which should be replaced by "scikit-learn"
 # (if this is not used, the github CI pipeline fails from time to time)
