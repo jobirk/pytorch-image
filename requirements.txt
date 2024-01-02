@@ -1,6 +1,8 @@
-dcor
+dcor        # calculate distance correlation
 fsspec
+gif         # simplifies animations
 h5py
+markupsafe
 matplotlib
 pandas
 pyarrow
@@ -42,4 +44,4 @@ pylint
 pyrootutils     # standardizing the project root setup
 pytest          # tests
 rich            # beautiful text formatting in terminal
-ruff
+ruff            # fast linter/formatter
