@@ -4,6 +4,7 @@ gif         # simplifies animations
 h5py
 markupsafe
 matplotlib
+mnist
 pandas
 pyarrow
 scikit-learn
