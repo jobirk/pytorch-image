@@ -1,3 +1,4 @@
+cupy-cuda117
 dcor        # calculate distance correlation
 fsspec
 gif         # simplifies animations
