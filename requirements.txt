@@ -6,6 +6,7 @@ h5py
 markupsafe
 matplotlib
 mnist
+nltk  # natural-language toolkit to generate unique but readable run-ids
 pandas
 pyarrow
 scikit-learn
@@ -19,6 +20,7 @@ energyflow
 fastjet
 jetnet
 law
+ragged
 uproot>=5
 weaver-core>=0.4
 
