@@ -1,6 +1,6 @@
 FROM pytorch/pytorch:2.2.0-cuda11.8-cudnn8-runtime
 
-RUN apt-get update && apt-get install -y vim wget curl git zsh tmux
+RUN apt-get update && apt-get install -y vim wget curl git zsh tmux libxcb-xinerama0
 
 # allow pip install of "sklearn", which should be replaced by "scikit-learn"
 # (if this is not used, the github CI pipeline fails from time to time since
