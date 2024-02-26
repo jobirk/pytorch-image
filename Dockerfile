@@ -15,6 +15,7 @@ SHELL ["/bin/bash", "--login", "-c"]
 
 RUN conda install -y jupyter
 RUN git clone https://github.com/minyoungg/vqtorch && cd vqtorch && pip install -e .
+RUN export PYTHONPATH=/workspace/vqtorch:$PYTHONPATH
 
 # move anaconda binary path to the end, otherwise the "clear" command in the
 # terminal is broken
